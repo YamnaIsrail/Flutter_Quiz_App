@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import './answers.dart';
-import './questions.dart';
-
 class Quiz extends StatelessWidget {
   final Function(int) answerQuestion;
   final int questionIndex;
