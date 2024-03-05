@@ -1,16 +1,33 @@
-# quiz_app
+# Quiz App
 
-A new Flutter project.
+This is a simple quiz app built using Flutter. The app presents a series of questions with multiple-choice answers to the user and calculates their total score based on their answers.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Present questions with multiple-choice answers.
+- Calculate the user's total score based on their answers.
+- Restart the quiz to start over.
 
-A few resources to get you started if this is your first Flutter project:
+## Components
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Quiz Widget
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The `Quiz` widget is responsible for rendering the questions and answer choices. It takes three parameters:
+
+- `answerQuestion`: A callback function that handles when the user selects an answer.
+- `questionIndex`: The index of the current question being displayed.
+- `questions`: A list of maps containing the questions and their corresponding answer choices.
+
+### Result Widget
+
+The `Result` widget displays the user's total score and provides a button to restart the quiz. It takes two parameters:
+
+- `totalScore`: The total score achieved by the user.
+- `resetHandler`: A callback function to restart the quiz.
+
+## How to Use
+
+1. Initialize a list of questions with their answer choices.
+2. Provide callbacks to handle answering questions and restarting the quiz.
+3. Instantiate the `Quiz` widget with the appropriate parameters.
+4. Instantiate the `Result` widget to display the user's score.
